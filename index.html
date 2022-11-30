@@ -20,10 +20,79 @@
     <title>Shortly</title>
 </head>
 
-<body>
-    <div class="flex items-center h-screen justify-center">
-        <h1 class="text-3xl text-center text-blue-500 -mt-12">Tailwind is Awesome</h1>
-    </div>
+<body class="antialiased">
+    <!-- ========== Start Navigation Section ========== -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Start Nav Wrapper  -->
+        <div class="flex items-center justify-between">
+            <!-- Start Left Container (Logo and NavLinks) -->
+            <div class="flex items-center space-x-20">
+                <!-- Logo -->
+                <img src="images/logo.svg" alt="Logo">
+                <!-- Navlinks -->
+                <div class="hidden space-x-8 font-bold 
+                lg:flex">
+                    <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Features</a>
+                    <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Pricing</a>
+                    <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Resources</a>
+                </div>
+            </div>
+            <!-- End Left Container (Logo and NavLinks) -->
+
+            <!-- Start Right Container (Buttons) -->
+            <div class="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex">
+                <a href="#" class="hover:text-veryDarkViolet">Login</a>
+                <a href="#" class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70">Sign Up</a>
+            </div>
+            <!-- End Right Container (Buttons) -->
+
+            <!-- Start Hamburger Button -->
+            <!-- End Hamburger Button -->
+        </div>
+        <!-- End Nav Wrapper  -->
+
+        <!-- Start Mobile Menu Container -->
+        <!-- End Mobile Menu Container -->
+    </nav>
+    <!-- ========== End Navigation Section ========== -->
+
+    <!-- ========== Start HeroSection ========== -->
+    <section id="hero">
+        <!-- Start Hero Container -->
+        <div class="container flex flex-col-reverse mx-auto p-6 
+        lg:flex-row">
+            <!-- Content -->
+            <div class="flex flex-col space-y-10 mb-44 
+            lg:w-1/2 lg:mt-16 xl:mb-52">
+                <h1 class="text-5xl font-bold text-center 
+                lg:text-6xl lg:max-w-md lg:text-left">
+                    More than just shorter links
+                </h1>
+                <p class="text-2xl text-center text-gray-400 
+                lg:max-w-md lg:text-left">
+                    Build your brand's recognition and get detailed insights on how your
+                    links are performing.
+                </p>
+
+                <!-- Button -->
+                <div class="mx-auto 
+                lg:mx-0">
+                    <a href="#" class="py-5 px-10 text-2xl font-bold text-white bg-cyan rounded-full 
+                        lg:py-4 hover:opacity-70">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div class="mb-24 mx-auto md:w-180 
+            lg:mb-0 lg:w-1/2">
+                <img src="images/illustration-working.svg" alt="background">
+            </div>
+        </div>
+        <!-- End Hero Container -->
+    </section>
+    <!-- ========== End HeroSection ========== -->
 </body>
 
 </html>
