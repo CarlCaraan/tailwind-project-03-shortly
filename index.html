@@ -53,11 +53,26 @@
             <!-- End Right Container (Buttons) -->
 
             <!-- Start Hamburger Button -->
+            <button id="menu-btn" class="block hamburger focus:outline-none 
+            lg:hidden" type="button">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
             <!-- End Hamburger Button -->
         </div>
         <!-- End Nav Wrapper  -->
 
         <!-- Start Mobile Menu Container -->
+        <div id="menu" class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
+            <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+                <a class="w-full text-center" href="#">Features</a>
+                <a class="w-full text-center" href="#">Pricing</a>
+                <a class="w-full text-center" href="#">Resources</a>
+                <a class="w-full text-center pt-6 border-t border-gray-400" href="#">Login</a>
+                <a class="w-full text-center py-3 rounded-full bg-cyan" href="#">Sign Up</a>
+            </div>
+        </div>
         <!-- End Mobile Menu Container -->
     </nav>
     <!-- ========== End Navigation Section ========== -->
